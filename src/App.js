@@ -1,13 +1,7 @@
-import React from 'react';
-import './App.css';
-import NavBar from './components/NavBar';
+import React from "react";
+import "./App.css";
+import Routes from "./routes";
 
-function App() {
-  return (
-    <div className="App">
-      <NavBar/>
-    </div>
-  );
-}
+const App = () => <Routes />;
 
 export default App;
