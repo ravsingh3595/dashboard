@@ -61,18 +61,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function NavBar() {
   const classes = useStyles();
-  const [activeLink, setActiveLink] = React.useState("usage");
-
-  const setActivePage = e => {
-    e.preventDefault();
-    if (e.target.id === "services") {
-      console.log("services");
-      setActiveLink("services");
-    } else {
-      console.log("usage");
-      setActiveLink("usage");
-    }
-  };
 
   return (
     <div className={classes.grow}>
