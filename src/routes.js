@@ -1,6 +1,7 @@
 import React from "react";
-import { Router, Route, Switch } from "react-router-dom";
+import { Router, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import Usage from "./containers/Usage";
 import { createBrowserHistory as createHistory } from "history";
 
 export const history = createHistory();
@@ -9,10 +10,8 @@ const routes = () => {
     <div>
       <div>
         <Router history={history}>
-          <Switch>
-            <Route path="/" component={NavBar} exact={true} />
-            <Route path="/usage" component={NavBar} />
-          </Switch>
+          <Route path="/" component={NavBar} />
+          <Route path="/usage" component={Usage} />
         </Router>
       </div>
     </div>
