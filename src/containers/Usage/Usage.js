@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import OverviewCard from "../../components/OverviewCard";
 import OverviewNav from "../../components/OverviewNav";
 import MapDataVisualization from "../../components/MapDataVisualization";
+import BarChartDataVisualization from "../../components/BarChartDataVisualization";
 
 class Usage extends Component {
   render() {
@@ -31,8 +32,9 @@ class Usage extends Component {
             amountChange={297}
           />
         </div>
+        <div>{/* <MapDataVisualization /> */}</div>
         <div>
-          <MapDataVisualization />
+          <BarChartDataVisualization />
         </div>
       </div>
     );
