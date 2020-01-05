@@ -1,19 +1,23 @@
 import React from "react";
-import { Router, Route, Switch } from "react-router-dom";
+import { Router, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import Usage from "./containers/Usage";
 import { createBrowserHistory as createHistory } from "history";
+import Grid from "@material-ui/core/Grid";
 
 export const history = createHistory();
 const routes = () => {
   return (
     <div>
       <div>
-        <Router history={history}>
-          <Switch>
-            <Route path="/" component={NavBar} exact={true} />
-            <Route path="/usage" component={NavBar} />
-          </Switch>
-        </Router>
+        <Grid container spacing={3} justify="center">
+          <Grid item xs={10}>
+            <Router history={history}>
+              <Route path="/" component={NavBar} />
+              <Route path="/usage" component={Usage} />
+            </Router>
+          </Grid>
+        </Grid>
       </div>
     </div>
   );
