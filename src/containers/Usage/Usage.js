@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import OverviewCard from "../../components/OverviewCard";
 import OverviewNav from "../../components/OverviewNav";
+import MapDataVisualization from "../../components/MapDataVisualization";
 
 class Usage extends Component {
   render() {
     return (
-      <div style={{ paddingTop: "50px" }}>
+      <div style={{ paddingTop: "40px" }}>
         <OverviewNav />
         <div style={{ display: "flex", flexGrow: 1 }}>
           <OverviewCard
@@ -29,6 +30,9 @@ class Usage extends Component {
             percentageChange={6}
             amountChange={297}
           />
+        </div>
+        <div>
+          <MapDataVisualization />
         </div>
       </div>
     );
