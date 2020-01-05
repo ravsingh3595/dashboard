@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import OverviewCard from "../../components/OverviewCard";
+import OverviewNav from "../../components/OverviewNav";
 
 class Usage extends Component {
   render() {
     return (
       <div style={{ paddingTop: "50px" }}>
+        <OverviewNav />
         <div style={{ display: "flex", flexGrow: 1 }}>
           <OverviewCard
             title="Subscriber count"

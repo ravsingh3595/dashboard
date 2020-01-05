@@ -46,7 +46,9 @@ function OverviewCard(props) {
       <div className={classes.titleContainer}>
         <Typography variant="body2">{props.title}</Typography>
         <div className={classes.subTitleContainer}>
-          <Typography variant="h4">{props.amountChange}</Typography>
+          <Typography style={{ fontSize: "32px" }} variant="h4">
+            {props.amountChange}
+          </Typography>
           <Typography variant="h6" className={classes.subTitle}>
             {props.subTitle}
           </Typography>
@@ -56,9 +58,9 @@ function OverviewCard(props) {
         <Typography variant="h6">+{props.percentageChange}%</Typography>
 
         {props.change ? (
-          <FiArrowUp style={{}} size={42} color="#00FF00" />
+          <FiArrowUp size={42} color="#74A04C" />
         ) : (
-          <FiArrowUp size={42} color="#FF0000" />
+          <FiArrowUp size={42} color="#D0021A" />
         )}
       </div>
     </div>
