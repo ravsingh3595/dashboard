@@ -27,7 +27,8 @@ class BarChartDataVisualization extends Component {
         style={{
           display: "flex",
           flexDirection: "row",
-          border: "1px solid #EEEEEE"
+          border: "1px solid #EEEEEE",
+          height: "350px"
         }}
       >
         <div style={{ display: "flex", flexDirection: "column" }}>
@@ -42,7 +43,7 @@ class BarChartDataVisualization extends Component {
             Location traffic by time of day
           </Typography>
           <BarChart
-            width={500}
+            width={450}
             height={300}
             data={barChartData}
             margin={{
@@ -73,7 +74,7 @@ class BarChartDataVisualization extends Component {
             />
             <Tooltip />
             <Legend />
-            <Bar dataKey="Time of Day" fill="#935B92" barSize={12}></Bar>
+            <Bar dataKey="Time of Day" fill="#935B92" barSize={10}></Bar>
           </BarChart>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
@@ -130,7 +131,11 @@ class BarChartDataVisualization extends Component {
           }}
         >
           {pieChartData.map(data => (
-            <CoverChartLegent colour={data.color} content={data.name} />
+            <CoverChartLegent
+              key={data.name}
+              colour={data.color}
+              content={data.name}
+            />
           ))}
         </div>
       </div>

@@ -6,7 +6,7 @@ const CoverageChartLegend = props => {
   return (
     <div className="legend-row">
       <div
-        style={{ height: "15px", width: "20px", backgroundColor: props.colour }}
+        style={{ height: "15px", width: "18px", backgroundColor: props.colour }}
       />
       <div className="legend-row-contentBox">{props.content}</div>
     </div>
