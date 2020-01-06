@@ -112,9 +112,27 @@ export const pieChartData = [
   { name: "Galaxy 10", value: 350, color: "#B87384" },
   { name: "iPad Pro", value: 250, color: "#E4A675" },
   { name: "Note 10", value: 700, color: "#F1B9CD" },
-  { name: "LG C9 OLED Tv", value: 400, color: "#BBD37C" },
+  { name: "LG C9 OLED", value: 400, color: "#BBD37C" },
   { name: "Samsung Q90", value: 300, color: "#7BC5E0" },
   { name: "QLED TV", value: 280, color: "#8E7C92" },
   { name: "iPhone X", value: 420, color: "#BDBBB4" },
   { name: "Windows", value: 400, color: "#F3B266" }
+];
+
+export const volumeUsageChart = [
+  { name: "YouTube", value: 997, color: "#95BE78" },
+  { name: "Netflix", value: 759, color: "#AE8EB1" },
+  { name: "HTTP media stream", value: 729, color: "#B87384" },
+  { name: "Amazon Prime", value: 689, color: "#E4A675" },
+  { name: "Hulu", value: 563, color: "#F1B9CD" },
+  { name: "iTunes purchase", value: 541, color: "#BBD37C" },
+  { name: "SSL v3", value: 540, color: "#7BC5E0" },
+  { name: "HBO now", value: 521, color: "#8E7C92" },
+  { name: "XBox", value: 472, color: "#BDBBB4" },
+  { name: "Play Station", value: 444, color: "#03B266" },
+  { name: "Apple Tv", value: 420, color: "#F30266" },
+  { name: "Roku", value: 350, color: "#23B206" },
+  { name: "TED", value: 301, color: "#403266" },
+  { name: "Hotstar", value: 264, color: "#739006" },
+  { name: "Global", value: 211, color: "#93B260" }
 ];
